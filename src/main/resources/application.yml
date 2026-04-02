@@ -17,13 +17,10 @@ spring:
     change-log: classpath:/db/changelog/master.yaml
 
 logging:
-  file:
-    path: logs
   level:
-    kg.attractor.jobsearchjava27: debug
-    com.zaxxer.hikari: error
-    org.apache.tomcat: error
-    liquibase: error
     root: info
   pattern:
-    file: "%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n"
+    file: '%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n'
+  file:
+    path: logs
+
