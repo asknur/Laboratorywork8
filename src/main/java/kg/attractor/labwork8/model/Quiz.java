@@ -13,4 +13,7 @@ public class Quiz {
     private Long creatorId;
     private String description;
     private String title;
+
+    private Integer countOfQuestions;
+
 }
