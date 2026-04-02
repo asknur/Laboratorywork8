@@ -10,7 +10,7 @@ public class ResultMapper implements RowMapper<QuizResult> {
         QuizResult result = new QuizResult();
         result.setQuizId(rs.getLong("quiz_id"));
         result.setUserId(rs.getLong("user_id"));
-        result.setScore(rs.getInt("score"));
+        result.setScore(rs.getDouble("score"));
         result.setId(rs.getLong("id"));
         return result;
     }
