@@ -10,7 +10,7 @@ import lombok.*;
 @AllArgsConstructor
 public class QuizResult {
     private Long id;
-    private Integer score;
+    private Double score;
     private Long userId;
     private Long quizId;
 }
